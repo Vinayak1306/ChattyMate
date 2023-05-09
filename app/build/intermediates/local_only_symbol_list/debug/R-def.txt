@@ -17,7 +17,6 @@ drawable bottomback
 drawable circle
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-id linearLayout
 id linearLayout2
 id mic
 id textView

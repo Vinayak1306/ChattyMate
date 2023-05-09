@@ -48,12 +48,12 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.example.chattymate.app-main-30:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.example.chattymate.app-merged_res-28:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.example.chattymate.app-main-30:\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.example.chattymate.app-merged_res-28:\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.example.chattymate.app-main-30:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.example.chattymate.app-merged_res-28:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.example.chattymate.app-main-30:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.example.chattymate.app-merged_res-28:\\mipmap-hdpi_ic_launcher_round.webp.flat",
