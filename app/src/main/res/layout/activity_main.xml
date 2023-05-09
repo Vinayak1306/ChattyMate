@@ -4,22 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="10dp"
     android:background="#ACA8EA"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+
 
         <FrameLayout
-            android:onClick="speech"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -28,8 +19,8 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <View
-                android:layout_width="390dp"
-                android:layout_height="390dp"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
                 android:background="@drawable/circle"
                 android:elevation="0dp" />
 
@@ -48,7 +39,8 @@
                     android:gravity="center"
                     android:text="HI USER! 👋"
                     android:textColor="@color/black"
-                    android:textSize="30dp" />
+                    android:textSize="30dp"
+                    tools:ignore="HardcodedText,SpUsage" />
 
                 <TextView
                     android:id="@+id/textView1"
@@ -61,22 +53,23 @@
                     android:text="TAP TO CHAT"
                     android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:textSize="40dp" />
+                    android:textSize="40dp"
+                    tools:ignore="HardcodedText,SpUsage" />
 
 
-                <View
+                <ImageButton
+                    android:id="@+id/mic"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:background="@drawable/baseline_keyboard_voice_24"
-                    android:elevation="1dp" />
+                    android:elevation="1dp"
+                    tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
 
             </LinearLayout>
 
 
         </FrameLayout>
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -90,7 +83,7 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
 
-        <View
+        <ImageButton
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
@@ -98,9 +91,10 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/baseline_home_24"
-            android:elevation="1dp" />
+            android:elevation="1dp"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        <View
+        <ImageButton
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
@@ -108,9 +102,10 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/baseline_history_24"
-            android:elevation="1dp" />
+            android:elevation="1dp"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        <View
+        <ImageButton
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
@@ -118,9 +113,10 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/baseline_keyboard_alt_24"
-            android:elevation="1dp" />
+            android:elevation="1dp"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        <View
+        <ImageButton
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
@@ -128,9 +124,19 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/baseline_man_24"
-            android:elevation="1dp" />
+            android:elevation="1dp"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
